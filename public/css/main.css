@@ -1,0 +1,133 @@
+html, body {
+    height: 100%;
+    overflow: hidden;
+    background-color: #fff;
+  }
+  
+  * {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+  
+
+  .wrapper {
+    overflow: hidden;
+    resize: horizontal;
+    
+    
+  }
+
+  .content {
+    display: grid;
+    grid-template-columns: 1fr 0.2fr;
+    overflow: hidden;
+  }
+
+  aside {
+    contain: layout inline-size style;
+    background-color: rgba(211, 211, 211, 0.486);
+    padding: 0.5rem;
+    height: 100vh;
+  }
+  aside ul {
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+    padding-left: 3px;
+    margin-top: 15px;
+  }
+  aside li {
+    display: flex;
+    flex-direction: column;
+    place-items: center;
+    gap: 0.5rem;
+    padding: 0.5rem;
+  }
+
+  
+
+
+  #btn{
+    margin-top: 60vh;
+    text-align: center;
+    border: 2px solid red;
+    margin-left: 15%;
+    width: 70%;
+  }
+
+  #btn a{
+    color: red;
+    font-family: monospace;
+    text-decoration: none;
+    text-transform: capitalize;
+    font-size: 1.7em;
+  }
+
+  h2{
+    font-family: 'Open Sans', sans-serif;
+  }
+
+  .right{
+      float: right;
+  }
+
+  #chat {
+    height: 70%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    padding: 2vw;
+  }
+  
+  textarea {
+    width: 60vw;
+    border: 1px solid #ddd;
+    height: 12vw;
+    padding: 10px 2vw;
+    font-size: 1.5vw;
+    background-color: whitesmoke;
+  }
+  
+  button {
+    width: 60vw;
+    height: 5vw;
+    font-size: 1.5vw;
+    background: #069;
+    text-align: center;
+    line-height: 5vw;
+    font-weight: bold;
+    color: #FFF;
+    margin-top: 1vw;
+    border: none;
+    cursor:pointer;
+  }
+  
+  .messages {
+    width: 60vw;
+    height: 40vw;
+    margin: 2vw 0;
+    border: 1px solid #ddd;
+    padding: 2vw;
+    background-color: whitesmoke;
+    overflow: auto;
+  }
+
+  @media screen and (max-width: 990px) {
+    input,
+    button,
+    .messages {
+      width: 90%;
+    }
+  
+    input,
+    button {
+      height: 2rem;
+      font-size: 1rem;
+    }
+  
+    .messages {
+      height: 60%;
+    }
+  }

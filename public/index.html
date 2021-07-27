@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="/css/login.css">
+    <title>Login</title>
+</head>
+<body>
+    <nav>
+        <h1>TELA DE LOGIN</h1>
+    </nav>
+    <div>
+        <form action="/login" method="POST">
+            <input type="text" name="username" placeholder="Username"><br>
+            <input type="password" name="password" placeholder="Senha"><br>
+            <button type="submit">Enviar</button>
+        </form>
+    </div>
+    
+    <p>
+        <label class="failure"></label>
+    </p>
+
+    <p id="forgot">
+        <a href="/cad">Fazer meu Cadastro</a>
+    </p>
+</body>
+</html>
